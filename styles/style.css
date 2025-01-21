@@ -15,7 +15,6 @@
   min-block-size: 100dvb;
   font-family: sans-serif;
   font-weight: var(--weight-main);
-  background-image: repeating-linear-gradient(0deg, #d3d3d3 2px, transparent 4px), repeating-linear-gradient(90deg, #d3d3d3 2px, transparent 4px), linear-gradient(to bottom, #e7e7e7, #1a1a1a);
   background-image: repeating-linear-gradient(0deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px), repeating-linear-gradient(90deg, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px), linear-gradient(to bottom, #e7e7e7, #1a1a1a);
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,7 +24,7 @@
 @supports (font-variation-settings: normal) {
   .page {
       font-family: var(--main-family), sans-serif;
-      font-variation-settings: 'wdth' var(--weight-main);
+      font-variation-settings: 'wght' var(--weight-main), 400;
   }
 }
 
