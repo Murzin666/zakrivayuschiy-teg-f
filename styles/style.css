@@ -81,7 +81,7 @@
 
 .card__wrap_image {
   position: relative;
-  max-height: 700px;
+  height: clamp(375px, 261.9718px + 30.1408vw, 700px);
 }
 
 .image__sign {
