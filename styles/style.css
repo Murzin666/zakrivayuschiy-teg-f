@@ -24,7 +24,7 @@
 @supports (font-variation-settings: normal) {
   .page {
       font-family: var(--main-family), sans-serif;
-      font-variation-settings: "wght" var(--weight-main);
+      font-variation-settings: 'wght' var(--weight-main, 400); 
   }
 }
 
