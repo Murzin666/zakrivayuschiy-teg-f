@@ -9,34 +9,54 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
-.button__heart:hover .core {
-  fill: var(--accent-color);
-  transition: fill 0.3s ease-in-out;
-}
-
 .main-body {
   fill: transparent;
-  transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s linear;
+}
+
+.contour {
+  fill: var(--accent-color);
+  transition: fill 0.1s linear;
+}
+
+.core {
+  fill: transparent;
+  transition: fill 0.3s 0.03s linear;
+}
+
+.button__heart:hover .core {
+  fill: var(--accent-color);
+  transition: fill 0.3s linear;
 }
 
 .button__heart:hover .main-body {
   fill: var(--accent-color);
-  transition: fill 0.3s 0.05s ease-in-out;
+  transition: fill 0.3s 0.05s linear;
 }
 
-.button__heart:active .core,
+.button__heart:active .core {
+  fill: red;
+  transition: fill 0.3s linear;
+}
+
 .button__heart:active .main-body {
   fill: red;
+  transition: fill 0.3s 0.05s linear;
 }
 
-.like-icon.is-liked .core, 
+.like-icon.is-liked .core {
+  fill: red;
+  transition: fill 0.3s linear;
+}
+
 .like-icon.is-liked .main-body {
   fill: red;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon.is-liked .contour {
   fill: red;
-  transition: fill 0.3s 0.06s ease-in-out;
+  transition: fill 0.3s 0.06s linear;
 }
 
 .like-icon.is-liked .heart {
