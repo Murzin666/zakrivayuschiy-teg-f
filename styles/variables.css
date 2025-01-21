@@ -1,10 +1,10 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --main-family: "Inter-Variable", sans-serif;
-    --accent-family: "PressStart2P", sans-serif;
-    --weight-title: 700;
-    --weight-main: 400;
-    --size-s: 14px;
-    --size-m: 18px;
-    --accent-color: #000;
-  }
+  --main-family: "Inter-Variable";
+  --accent-family: "PressStart2P";
+  --weight-title: 700;
+  --weight-main: 400;
+  --size-s: 14px;
+  --size-m: 18px;
+  --accent-color: #000;
+}
