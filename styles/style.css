@@ -142,18 +142,15 @@
   cursor: pointer;
 }
 
-.button:focus,
 .button:focus {
   outline: 0;
 }
 
-.button:focus-visible,
 .button:focus-visible {
   outline: 0;
   box-shadow: 2px 2px 0 var(--accent-color);
 }
 
-.button::before,
 .button::before {
   content: "";
   background-color: var(--accent-color);
@@ -164,7 +161,6 @@
   left: 0;
 }
 
-.button:hover.button::before,
 .button:hover.button::before {
   width: 100%;
   height: 100%;
