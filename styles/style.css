@@ -105,7 +105,7 @@
   display: flex;
   flex-direction: column;
   gap: 26px;
-  padding: 21px 25px 19px;
+  padding: 21px 25px 23px;
   font-family: var(--main-family);
   font-size: var(--size-m);
   line-height: 117%;
@@ -131,6 +131,8 @@
   border: 2px solid var(--accent-color);
   background-color: #fff;
   transition: box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .button:hover {
@@ -154,6 +156,8 @@
   transform: translateX(-100%);
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .button:hover.button::before {
@@ -163,11 +167,14 @@
 }
 
 .button__heart {
+  display: flex;
   padding: 0;
   border: 2px solid transparent;
   transition: border 0.3s ease;
   background-color: #fff;
   cursor: pointer;
+  height: 40px;
+  align-items: center;
 }
 
 .button__heart:focus {
@@ -181,9 +188,7 @@
 }
 
 .button__like {
-  padding: 10px 0;
-  position: relative;
-  overflow: hidden;
+  padding: 11px 0;
   min-width: 130px;
 }
 
@@ -202,8 +207,6 @@
   align-items: center;
   gap: 8px;
   padding: 15px 20px;
-  position: relative;
-  overflow: hidden;
 }
 
 .save {
